@@ -14,8 +14,13 @@ def index(request):
     return render(request,'login.html',ret)
 def list_todo(request):
     ret={}
+    if request.method=="POST":
+        t = todo(text=request.POST.get('todo'))
+        t.save()
+        print()
     ret['todo']=todo.objects.all()
     return render(request,'todo.html',ret)
+
 
     
 
