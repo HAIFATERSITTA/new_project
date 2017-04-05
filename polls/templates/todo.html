@@ -48,7 +48,7 @@
                 <ul class="list-group">
 
                     {% for item in todo %}
-                    <li class="list-group-item">{{ item.text }}</li>
+                        <li class="list-group-item"> <a href="/todo/delete?id={{ item.pk }}">{{ item.text }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

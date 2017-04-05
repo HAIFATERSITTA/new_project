@@ -21,5 +21,9 @@ from polls import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^todo$', views.list_todo, name='list_todo'),
-    url(r'^admin/', admin.site.urls)
+    url(r'^loginpage$',views.login,name='login'),
+    url(r'^sign$', views.signup, name='signup'),
+
+    url(r'^admin/', admin.site.urls),
+    url(r'^todo/delete',views.todo_delete,name='todo_delete'),
 ]

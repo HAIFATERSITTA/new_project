@@ -19,15 +19,15 @@
         <![endif]-->
     </head>
     <body>
-        
+
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <form action="" method="POST" role="form">
                          {% csrf_token %}
             <legend> Login </legend>
-        
+
             <div class="form-group">
 
                 <label for="">User</label>
@@ -37,25 +37,31 @@
                 <label for="">Password</label>
                 <input type="password" class="form-control" id="" name="password" placeholder="Input field">
             </div>
-            
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" id="" name="password2" placeholder="confirm password">
+            </div>
+
+
             <div class="checkbox">
                 <label>
                     <input type="checkbox" value="">
                     Remember  password
                 </label>
             </div>
-            
-            
-        
+
+
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-                    
+{{ msg }}
                 </div>
             </div>
-            
+
         </div>
-        
-        
+
+
         <!-- jQuery -->
         <script src="//code.jquery.com/jquery.js"></script>
         <!-- Bootstrap JavaScript -->

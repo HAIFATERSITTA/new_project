@@ -1,5 +1,5 @@
 from django.db import models
-
+#from django.contrib.admin.models import User
 
 # Create your models here.
 class Question(models.Model):
@@ -13,6 +13,6 @@ class Choice(models.Model):
 
 class todo(models.Model):
     text=models.CharField(max_length=100)
-
+    # user=models.ForeignKey(User)
     def __str__(self):
         return self.text
